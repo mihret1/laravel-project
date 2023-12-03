@@ -1,6 +1,6 @@
 // import React from 'react'
 
-const ShoeCard = ({imgURL,bigShoeImage,changeBigShoeImage}) => {
+const ShoeCard = ({imgURL,bigShoeImg,changeBigShoeImage}) => {
     const handleClick=()=>{
         if(bigShoeImg !==imgURL.bigShoe){
             changeBigShoeImage(imgURL.bigShoe)
@@ -8,12 +8,12 @@ const ShoeCard = ({imgURL,bigShoeImage,changeBigShoeImage}) => {
     }
   return (
     <div className={`border-2 rounded-xl 
-    ${bigShoeImage ===imgURL ? 'border-coral-red'
+    ${bigShoeImg ===imgURL ? 'border-coral-red'
     :'border-transparent'} cusror-pointer max-sm:flex-1
     `}
      onClick={handleClick}
     >ShoeCard
-      <div className='flex justify-center items-start bg-card bg-center bg-cover sm:w-40 sm:h-40 rounded-xl max-sm:p-4'>
+      <div className='flex justify-center items-start bg-card bg-center bg-cover sm:w-40 sm:h-40 rounded-xl max-sm:'>
         <img 
           src={imgURL.thumbnail}
           alt='shoe collection'
