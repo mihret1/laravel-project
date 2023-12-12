@@ -9,7 +9,7 @@ const App=()=>(
     <section className="padding">
            <PopularProduct />
     </section>
-    <section className="padding<">
+    <section className="padding">
           <SuperQuality />
     </section>
     <section className="padding-x py-10">
